@@ -70,22 +70,18 @@ Node* AVL::insert(Node* root, int key, Point p) {
 }
 
 vector<Point> AVL::rangeQuery(Node* root, int l, int r) {
-    vector<Point> res;
-    if (!root) return res;
-
+    vector<Point> rem;
+    if (!root) return rem;
     if (root->key >= l && root->key <= r) {
-        res.insert(res.end(), root->points.begin(), root->points.end());
+        rem.insert(rem.end(), root->points.begin(), root->points.end());
     }
-
     if (l < root->key) {
         auto left = rangeQuery(root->left, l, r);
-        res.insert(res.end(), left.begin(), left.end());
+        rem.insert(rem.end(), left.begin(), left.end());
     }
-
     if (r > root->key) {
         auto right = rangeQuery(root->right, l, r);
-        res.insert(res.end(), right.begin(), right.end());
+        rem.insert(rem.end(), right.begin(), right.end());
     }
-
-    return res;
+    return rem;
 }
