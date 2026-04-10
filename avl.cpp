@@ -71,6 +71,7 @@ Node* AVL::insert(Node* root, int key, Point p) {
 
 vector<Point> AVL::rangeQuery(Node* root, int l, int r) {
     vector<Point> rem;
+<<<<<<< HEAD
 
     if (!root) return rem;
 
@@ -78,11 +79,16 @@ vector<Point> AVL::rangeQuery(Node* root, int l, int r) {
         rem.insert(rem.end(), root->points.begin(), root->points.end());
     }
     
+=======
+    if (!root) return rem;
+    if (root->key >= l && root->key <= r) {
+        rem.insert(rem.end(), root->points.begin(), root->points.end());
+    }
+>>>>>>> b963ca55e2746234d88ce799e6f41447dcbc608c
     if (l < root->key) {
         auto left = rangeQuery(root->left, l, r);
         rem.insert(rem.end(), left.begin(), left.end());
     }
-
     if (r > root->key) {
         auto right = rangeQuery(root->right, l, r);
         rem.insert(rem.end(), right.begin(), right.end());
