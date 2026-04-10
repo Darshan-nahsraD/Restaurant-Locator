@@ -15,11 +15,5 @@ int main() {
     int x1 = 2, x2 = 6;
     int y1 = 3, y2 = 6;
 
-    auto res = tree.query(x1, x2, y1, y2);
-
-    cout << "Restaurants in range:\n";
-
-    for (auto p : res) {
-        cout << "(" << p.x << ", " << p.y << ")\n";
-    }
+   
 }
