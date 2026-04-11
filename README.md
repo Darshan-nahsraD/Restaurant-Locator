@@ -45,4 +45,20 @@ restaurant-locator/
 ├── range_tree.h # Range tree declarations
 ├── range_tree.cpp # Range tree logic
 └── README.md # Project documentation
+
+
+## Example
+
+
+Restaurants:
+(1,2), (3,4), (5,6), (7,8), (2,5), (6,3)
+
+Query:
+x ∈ [2,6], y ∈ [3,6]
+
+Output:
+(3,4)
+(5,6)
+(2,5)
+(6,3)
 ```
