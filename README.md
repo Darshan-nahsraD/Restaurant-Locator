@@ -62,3 +62,28 @@ Output:
 (2,5)
 (6,3)
 ```
+
+## Technologies Used
+
+- C++
+- AVL Tree (Self-balancing BST)
+- Range Tree Concept
+- Graph/Data Structures
+
+## Key Learnings
+
+- Efficient range searching in multidimensional data
+- Implementation of AVL Trees and balancing techniques
+- Optimization of query performance
+- Applying data structures to real-world problems
+
+## Future Improvements
+
+- Implement full 2D Range Tree (AVL inside AVL)
+- Add visualization for query regions
+- Convert into a web-based application
+- Support dynamic insertions and deletions
+
+## Author
+
+Darshan Mujalde
