@@ -36,3 +36,13 @@ To optimize query performance, we use a 2D Range Tree built using AVL Trees.
 | Query           | O((log n)^2) (ideal) |
 
 ## Project Structure
+```
+restaurant-locator/
+│
+├── main.cpp # Entry point
+├── avl.h # AVL tree declarations
+├── avl.cpp # AVL tree implementation
+├── range_tree.h # Range tree declarations
+├── range_tree.cpp # Range tree logic
+└── README.md # Project documentation
+```
